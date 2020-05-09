@@ -1,1 +1,48 @@
 
+    public Food(@Nullable String name, String style, int score, String creationDate) {
+        FoodName = name;
+        FoodStyle = style;
+        FoodScore = score;
+        FoodCreationDate = creationDate;
+    }
+
+    public int getId() {
+        return FoodId;
+    }
+
+    public void setId(int id) {
+        FoodId = id;
+    }
+
+    public String getName() {
+        return FoodName;
+    }
+
+    public void setName(String name) {
+        FoodName = name;
+    }
+
+    public String getStyle() {
+        return FoodStyle;
+    }
+
+    public void setStyle(String style) {
+        FoodStyle = style;
+    }
+
+    public int getScore() {
+        return FoodScore;
+    }
+
+    public void setScore(int score) {
+        FoodScore = score;
+    }
+
+    public String getCreationDate() {
+        return FoodCreationDate;
+    }
+
+    public void setCreationDate(String creationDate) {
+        FoodCreationDate = creationDate;
+    }
+
