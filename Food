@@ -1,4 +1,11 @@
+    @ColumnInfo(name = "FoodId")
+    private int FoodId;
 
+    @Nullable
+    @ColumnInfo(name = "FoodName")
+    private String FoodName;
+
+    private String mStyle;
     public Food(@Nullable String name, String style, int score, String creationDate) {
         FoodName = name;
         FoodStyle = style;
