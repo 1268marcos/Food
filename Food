@@ -1,3 +1,5 @@
+      @PrimaryKey(autoGenerate = true)
+    @NonNull
     @ColumnInfo(name = "FoodId")
     private int FoodId;
 
