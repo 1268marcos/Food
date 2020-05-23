@@ -1,15 +1,31 @@
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
 
-    @ColumnInfo(name = "FoodId")
+@Entity(tableName = "foods")
+
+public class Food {
+
+ @PrimaryKey(autoGenerate = true)
+    @NonNull
+    @ColumnInfo(name = "foodId")
     private int FoodId;
 
     @Nullable
-    @ColumnInfo(name = "FoodName")
+    @ColumnInfo(name = "foodName")
     private String FoodName;
 
     private String mStyle;
+    
+       private int FoodScore;
+       
+         private String FoodCreationDate;
+       
     public Food(@Nullable String name, String style, int score, String creationDate) {
         FoodName = name;
-        FoodStyle = style;
+        mStyle = style;
         FoodScore = score;
         FoodCreationDate = creationDate;
     }
@@ -31,11 +47,11 @@
     }
 
     public String getStyle() {
-        return FoodStyle;
+        return mStyle;
     }
 
     public void setStyle(String style) {
-        FoodStyle = style;
+        mStyle = style;
     }
 
     public int getScore() {
@@ -54,3 +70,6 @@
         FoodCreationDate = creationDate;
     }
 
+//faltou fechar o bloco da classe
+
+}
